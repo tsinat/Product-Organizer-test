@@ -1,0 +1,41 @@
+.navbar{
+    background-color: #252525;
+    color:white;
+    font-weight:bold;
+    border-radius: 0;
+}
+h1{
+    text-align: center;
+}
+.listPoke{
+    text-align: center;
+    display:block;
+    width: 100%;
+    height: 60px;
+    font-size: 1.5em;
+    border: 1px solid grey;
+    border-radius: 30px;
+}
+div{
+    font-size:1.5em;
+    margin-left:60px;
+}
+.navigation{
+    text-align: center;
+}
+.navigation li{
+    border:1px solid black;
+    padding:10px;
+    display:inline-block;
+}
+.detailCont{
+    border:2px solid grey;
+}
+.nameList{
+    width:100%;
+    padding-top:10px;
+    padding-left:30px;
+    background-color: grey;
+    margin-left:0;
+    margin-bottom: 30px;
+}

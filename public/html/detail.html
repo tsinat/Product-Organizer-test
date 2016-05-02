@@ -1,0 +1,48 @@
+<div class="container">
+    <h1>detail</h1>
+
+
+    <form ng-if="editProduct" ng-submit='saveDetail()'>
+        <h2 class='text-center'>Add Product</h2>
+        <div class="form-group">
+            <label for="">Name</label>
+            <input type="text" class='form-control' ng-model='editProduct.name' required>
+        </div>
+        <div class="form-group">
+            <label for="">Description</label>
+            <input type="text" class='form-control' ng-model='editProduct.description' required>
+        </div>
+        <div class="form-group">
+            <label for="">Price</label>
+            <input type="number" class='form-control' ng-model='editProduct.price' required>
+        </div>
+        <div class="form-group">
+            <label for="">Category</label>
+            <input type="text" class='form-control' ng-model='editProduct.category' required>
+        </div>
+        <div class="form-group">
+            <label for="">Image</label>
+            <input type="text" class='form-control' ng-model='editProduct.image' required>
+        </div>
+        <button type='submit' class='btn btn-primary'>save Edit</button>
+    </form>
+
+    <div class='detailCont'>
+        <div>Name: {{product.name}}</div>
+        <div>Description: {{product.description}}</div>
+        <div>Price: {{product.price}}</div>
+        <div>Category:{{product.category}}</div>
+        <div><img ng-src="{{product.image}}" alt=""></div>
+
+            <button type="button" class="btn btn-danger btn-lg" ng-click="removeProduct(product)">
+                <span class="glyphicon glyphicon-remove"></span>
+            </button>
+
+
+            <button type="button" class="btn btn-primary btn-lg" ng-click="editDetail(product)">
+                <span class="glyphicon glyphicon-edit"></span>
+            </button>
+
+    </div>
+
+</div>
